@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div class="fixedOption"></div>
+        <p>这是一个新节点</p>
+        <div class="replace-title">替换商品<i class="icon cb_icon icon-guanbi backPre" id="backPre">姜丝可乐的减肥来看电视剧给对方就搞定了点击结果</i></div>
+    <script>
+    
+        var ele = document.getElementsByClassName('fixedOption')[0];
+        console.log(ele);
+        ele.innerHTML= 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+    </script>
+</body>
+<script>
+    var html = `<div>新增加的div节点</div>`;
+    var ele = document.getElementsByClassName('fixedOption')[0];
+    var  p = document.getElementsByTagName('p')[0];
+    ele.appendChild(p);
+    $('.fixedOption').append('<h2>这是一个大bug</h2>');
+</script>
+</html>
